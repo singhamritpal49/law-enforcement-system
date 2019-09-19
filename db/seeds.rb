@@ -2,7 +2,7 @@ require 'Faker'
 Civilian.destroy_all
 eyecolor = ["BLK","BRO","BLU"]
 
-100.times do 
+10.times do 
     Civilian.create(
         first_name: Faker::Name.first_name,
         middle_name: Faker::Name.middle_name,

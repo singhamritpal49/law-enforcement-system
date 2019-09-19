@@ -8,6 +8,11 @@ class OfficersController < ApplicationController
     render json: @officers
   end
 
+  def profile
+    
+    render json: current_officer
+  end
+
   # GET /officers/1
   def show
     render json: @officer
@@ -39,13 +44,14 @@ class OfficersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_officer
-      @officer = Officer.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def officer_params
-      params.require(:officer).permit(:first_name, :middle_name, :last_name, :badge, :address1, :address2, :city, :state, :zip, :cell, :phone)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_officer
+    @officer = Officer.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def officer_params
+    params.require(:officer).permit(:first_name, :middle_name, :last_name, :badge, :address1, :address2, :city, :state, :zip, :cell, :phone)
+  end
 end
