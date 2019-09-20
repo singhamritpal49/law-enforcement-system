@@ -4,7 +4,7 @@ class CreateTickets < ActiveRecord::Migration[5.2]
       t.integer :case_number
       t.string :date
       t.string :time
-      t.string :type
+      t.string :ticket_type
       t.string :description
       t.string :location
       t.string :vehicle_license_plate

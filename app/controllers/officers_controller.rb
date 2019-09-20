@@ -52,6 +52,6 @@ class OfficersController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def officer_params
-    params.require(:officer).permit(:first_name, :middle_name, :last_name, :badge, :address1, :address2, :city, :state, :zip, :cell, :phone)
+    params.permit(:first_name, :middle_name, :last_name, :badge, :address1, :address2, :city, :state, :zip, :cell, :phone, :password)
   end
 end

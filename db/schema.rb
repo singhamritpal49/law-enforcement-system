@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 2019_09_18_152300) do
     t.integer "case_number"
     t.string "date"
     t.string "time"
-    t.string "type"
+    t.string "ticket_type"
     t.string "description"
     t.string "location"
     t.string "vehicle_license_plate"
