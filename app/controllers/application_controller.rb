@@ -3,6 +3,8 @@ class ApplicationController < ActionController::API
     request.headers["Authorization"].split(" ")[1]
   end
 
+  
+
   def decoded_token
     JWT.decode(token, "web062419", true, { algorithm: "HS256" })
   end

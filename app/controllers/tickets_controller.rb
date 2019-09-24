@@ -4,7 +4,6 @@ class TicketsController < ApplicationController
   # GET /tickets
   def index
     @tickets = Ticket.all
-
     render json: @tickets
   end
 
@@ -16,6 +15,7 @@ class TicketsController < ApplicationController
   # POST /tickets
   def create
     @ticket = Ticket.new(ticket_params)
+    # @ticket.case_number = Kernel.srand(1)
 
     if @ticket.save
       render json: @ticket, status: :created, location: @ticket

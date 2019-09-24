@@ -39,13 +39,14 @@ class CiviliansController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_civilian
-      @civilian = Civilian.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def civilian_params
-      params.require(:civilian).permit(:first_name, :middle_name, :last_name, :sex, :date_of_birth, :height, :eyes, :address1, :address2, :city, :state, :zip, :country, :email, :cell, :phone, :social_security_number, :driver_license, :driver_license_issue_state, :driver_license_issue_date, :driver_license_expiration_date)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_civilian
+    @civilian = Civilian.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def civilian_params
+    params.require(:civilian).permit(:first_name, :middle_name, :last_name, :sex, :date_of_birth, :height, :eyes, :address1, :address2, :city, :state, :zip, :country, :email, :cell, :phone, :social_security_number, :driver_license, :driver_license_issue_state, :driver_license_issue_date, :driver_license_expiration_date)
+  end
 end

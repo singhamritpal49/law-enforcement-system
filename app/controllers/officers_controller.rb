@@ -15,7 +15,7 @@ class OfficersController < ApplicationController
 
   # GET /officers/1
   def show
-    render json: @officer
+    render json: @officer, include: [:tickets]
   end
 
   # POST /officers
