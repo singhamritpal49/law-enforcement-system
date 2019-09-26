@@ -10,7 +10,7 @@ class OfficersController < ApplicationController
 
   def profile
     
-    render json: current_officer
+    render json: current_officer, include: [:tickets]
   end
 
   # GET /officers/1

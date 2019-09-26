@@ -10,7 +10,7 @@ class CiviliansController < ApplicationController
 
   # GET /civilians/1
   def show
-    render json: @civilian
+    render json: @civilian, include: [:tickets]
   end
 
   # POST /civilians
