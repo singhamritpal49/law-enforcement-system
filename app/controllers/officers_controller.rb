@@ -10,12 +10,12 @@ class OfficersController < ApplicationController
 
   def profile
     
-    render json: current_officer, include: [:tickets]
+    render json: current_officer, include: {tickets: {include: :civilian}}
   end
 
   # GET /officers/1
   def show
-    render json: @officer, include: [:tickets]
+    render json: @officer, include: [:tickets,:civilians]
   end
 
   # POST /officers
