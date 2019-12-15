@@ -1,25 +1,10 @@
-# README
+# law-Enforcement-System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ - Developed Rails API backend, using PostgreSQL
+ - Implemented authorization with JWT, and localStorage to encrypt user data
+ - Created frontend using React with auth
+ - Utilized React Router for routing
 
-Things you may want to cover:
+![ScreenShot](https://lh5.googleusercontent.com/LgnVsOoTdhbbRuCFU5J6tppdl32qaROdF0feIbSjeUGPCxG8ZE9hVvHENjxfDpAsAs8ELMMubdqsCSrIZscy=w1920-h897)
 
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![ScreenShot](https://lh6.googleusercontent.com/dKXm1mkLW3uAnlLAs4JYNGFcYMfYl1y8jAkp55HyygPkE5qlkKkk7xHvdXzVgwVOXlwXfT6UbfPYlA=w1920-h946-rw)
